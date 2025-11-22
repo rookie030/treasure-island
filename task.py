@@ -1,5 +1,3 @@
-from random import choice
-
 print(r'''
 *  ____________________________________________________________________
  / \-----     ---------  -----------     -------------- ------    ----\
@@ -62,8 +60,8 @@ if direction == "left":
                         print("\nYou saw a treasure chest where the monster came out. You opened it and found out that it has nothing inside.\nBetter luck next time ;)")
                 else:
                     print("The monster is immune to physical attacks. It grabbed you and ate you. Game over!")
-        elif choice == "flee":
-            print("As you tried to flee, the monster caught up and grabbed you. "
+            elif choice == "flee":
+                print("As you tried to flee, the monster caught up and grabbed you. "
                   "\nThe monster ate you. Game over.")
         elif colour == "blue":
             print("You entered the blue door. As you go further, it got colder and colder. "
@@ -72,7 +70,7 @@ if direction == "left":
             print("A burst of flames came gushing out of the door. "
                   "You weren't able to dodge it. You got incinerated. \nGame Over!")
         else:
-            print(' You chose a door that didn\'t exist. Game Over!')
+            print(' You chose a door that did\'nt exist. Game Over!')
     else:
         print("You decided to swim, the river is infested by piranhas. "
               "The piranhas ate you. Game Over!")
